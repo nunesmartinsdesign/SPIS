@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>THE MENU</title>
+<meta charset="iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #00162C;
+  font-family: Yu Gothic UI Light, Helvetica, sans-serif;
+  background-color: #E9F4FF
+}
+
+/* Style the header */
+header {
+  background-color: #FFFFFF;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #00162C;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  background: white;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  /*height: 300px;*/ /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: linear-gradient(#003F7F, #002C59, #00162C);
+  padding: 0px;
+  text-align: center;
+  color: #00162C;
+  font-size: 50px
+}
+
+/* BANNER GRADIENT */
+
+header {
+    background: linear-gradient(270deg, #003F7F, #002C59, #00162C);
+    background-size: 400% 400%;
+    color:#E9F4FF;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+/* BANNER IMAGE */
+h2{
+  height: 400px;
+  margin-bottom: -250px;
+
+}
+
+td{
+  vertical-align: top ;
+}
+
+body {
+  padding : 10px ;
+  
+}
+
+#exTab1 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+#exTab2 h3 {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>PARTY MENU</h2>
+</header>
+
+<table> 
+  <tr> <td>
+<button onclick="document.getElementById('demo').innerHTML = Date()"> Date and Time</button>
+</td>
+
+<td>
+<small id="demo"></small>
+</td></tr>
+</table>
+
+
+<p>Today we will be showing you our favorite party foods. The flavor of food is what most people focus on when they are deciding what to eat. It is crucial for a good meal that the it tastes good and is something that you like.</p>
+<p>We will be showing starters, main dish and desert, all the things you need for a nutritious meal. </p>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="starters.html">Starters</a></li>
+      <li><a href="main-dish.html">Main Dish</a></li>
+      <li><a href="desert.html">Desert</a></li>
+    </ul>
+
+  </nav>
+  
+</section>
+
+<footer>
+  <p>Hope you enjoy our food! Have a great meal!</p>
+</footer>
+
+
+</body>
+
+</html>

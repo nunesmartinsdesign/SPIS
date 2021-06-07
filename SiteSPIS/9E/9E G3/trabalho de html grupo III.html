@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Desporto</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:lightgray;
+}
+
+/* Style the header */
+header {
+  background-color:lightgray;
+  padding: 0,1px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 8%;
+  /*height: 300px;*/ /* only for demonstration, should be removed */
+  background: lightgray;
+  padding: px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 35px;
+  width: 100%;
+  background-color:lightgray;
+  /*height: 300px;*/ /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a{ color: black;
+}
+
+</style>
+</head>
+<body>
+
+<h1>A importância do desporto</h1>
+<p>O desporto é muito importante na vida de qulquer pessoa, seja criança ou adulto, o desporto consegue ajudar ao nível mental e ao nível físico, mas tanbém é importante no papel do desenvolvimento de amizades.</p>
+<p>Existem diversos tipos de desporto e agora vamos apresentar 3 dos desportos mais jogados.</p>
+
+<header>
+  <h1>Desporto</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#a">Futebol</a></li>
+      <li><a href="#b">Bsquetebol</a></li>
+      <li><a href="#c">Voleibol</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 id="a">Futebol</h1>
+    <p>O futebol é um dos desportos mais populares no mundo. Praticado em centenas de países, este desporto desperta interesse em função de sua forma de se disputar a bola.</p>
+    <p>O futebol tornou-se tão popular graças a sua simples maneira de jogar. Basta uma bola, duas equipas e a baliza, para que, em qualquer lugar, crianças e adultos possam divertir-se a jogar futebol. Na rua, na escola, ou até mesmo no quintal de casa, desde cedo jovens de vários cantos do mundo começam a praticar futebol.</p>
+
+   <iframe width="630" height="385" src="https://www.youtube.com/embed/UBt2G90CQD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </article>
+
+  <article><h1 id="b">Bsquetebol</h1>
+    <p>O basquetebol é um dos desportos colectivos mais populares do mundo, disputado entre duas equipas de cinco jogadores, cujo objectivo é introduzir a bola no cesto da equipa adversária (marcando pontos) e, simultaneamente, evitar que esta seja introduzida no próprio cesto.</p>
+    <p>No fim, a equipa que obtiver mais pontos, vence o jogo. Este desporto pode ser praticado dentro de um ginásio ou pavilhão bem como ao ar livre. É considerado um desporto olímpico desde 1936</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t22flliJLTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </article>
+
+   <article>
+    <h4 id="c">Voleibol</h4>
+    <p>O Voleibol é um desporto colectivo praticado por duas equipas, compostas por seis elementos cada, em jogo. No Voleibol de praia, defrontam-se duas equipas de dois jogadores, sem suplentes.</p>
+    <p>O objectivo do jogo é fazer com que uma equipa consiga o envio regulamentar da bola, por cima da rede, para cair no campo do adversário, procurando simultaneamente evitar que a mesma caia no seu próprio terreno. </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/REXbISRAKqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </article>
+</section>
+
+
+</body>
+</html>
+
+

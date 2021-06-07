@@ -1,0 +1,191 @@
+/* CORPO */
+
+body {
+	font-family:Open Sans, sans-serif; 
+	color: #1c1c1c;
+	width: 660px;
+	margin: auto;
+}
+
+h1, h2, h3 {
+	font-family:Roboto, sans-serif; 
+	color: #000000;
+}
+
+.botão {
+	color: #000000;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #ffebe6; 
+	font-size: .9em;
+	border-radius: 3px;
+
+}
+
+/* Navegação */
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:#ffebe6;
+}
+
+nav > a {
+
+	 text-decoration:none;
+	 color: #0000ff; 
+	 font-weight: 800;
+	 font-size: 32px;
+	 font-family: Roboto, sans-serif;
+}
+
+nav ul {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+
+}
+
+nav ul li {
+
+	text-align: center;
+	width:100%;
+}
+
+nav ul li a {
+
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #0000ff;
+}
+
+/* Cabeçalho */
+
+header {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("https://realidadesimulada.com/wp-content/uploads/2018/10/extra_large-1540201851-cover-image-752x440.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	padding: 20px;
+
+}
+
+#Tabela {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px 20px 20px 20px;
+	background-color:#ffebe6;
+	color: #000000; 
+
+}
+
+table, th, td{
+	border: 1px solid orange;
+	padding: 2px;
+	text-align: center;
+}
+
+/* Filipinas */
+
+#Filipinas {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	background-color: #ffebe6;
+	color: #000000; 
+
+}
+
+#Filipinas div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+
+}
+
+/* China */
+
+#China {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+    background-color: #ffebe6;
+	color: #000000;
+
+}
+
+#China div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+	 
+}
+
+/* Portugal */
+
+#Portugal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+    background-color: #ffebe6;
+	color: #000000;
+	
+}
+
+#Portugal div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+	 
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+

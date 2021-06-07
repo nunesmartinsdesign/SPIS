@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hello World</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .parallax{
+    background-image: url("https://cdn.pixabay.com/photo/2013/07/12/14/33/melody-148443_960_720.png");
+    height:500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+* {
+  box-sizing: border-box;
+}
+.verde{color:green}
+.vermelho{color:red}
+body {
+  width: 90%;
+  margin:auto;
+  background-color:whitesmoke;
+  background-image: linear-gradient(white, beige);
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:left;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  /*height: 300px;*/ /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  /*height: 300px;*/ /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* BANNER GRADIENT */
+
+header {
+    background: linear-gradient(270deg, #246635, #c3ebff);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+/* BANNER IMAGE */
+h2{
+  background-image: url("https://cdn.pixabay.com/photo/2013/07/12/14/33/melody-148443_960_720.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+ 
+  height: 500px;
+  margin-bottom: -30px;
+
+}
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media only screen and (max-width: 600px) {
+  nav, article, body {
+    width: 100%;
+    height: 500px;
+    margin: none;
+    
+  }
+}
+</style>
+</head>
+<body>
+
+<div class = "parallax"></div>
+
+<h1>Hello World</h1>
+<p>Página Hello World como exemplo</p>
+
+<header>
+  <h2>Serviços Streaming de Música</h2>
+</header>
+
+<nav>
+  <a href = "#tabela">Tabela</a>
+  <a href = "#artigo">Artigo</a>
+  <a href = "#listas">Listas</a>
+</nav>
+
+
+<section>
+  <table style="width:100%" id="tabela">
+    <tr>
+      <th>Aplicação</th>
+      <th><a href="https://www.spotify.com/pt-en/home/">Spotify</a></th>
+      <th><a href="https://www.youtube.com/musicpremium">Youtube Music</a></th>
+      <th><a href="https://www.apple.com/pt/apple-music/">Apple Music</a></th>
+    </tr>
+      <th>Logo</th>´
+      <th><img src="https://logos-world.net/wp-content/uploads/2020/09/Spotify-Symbol.png" alt="Spotify" width="192" height="108"></th>
+      <th><img src="https://logosmarcas.net/wp-content/uploads/2021/04/Youtube-Music-Logo.png" alt="Youtube" width="192" height="108"></th>
+      <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Apple_Music_logo.svg/1024px-Apple_Music_logo.svg.png" alt="Apple Music" width="128" height="32"></th>
+    <tr>
+      <th>Preço</th>
+      <th class="verde">✓</th>
+      <th class = "vermelho">X</th>
+      <th class = "vermelho">X</th>
+    </tr>
+    <tr>
+      <th>Qualidade de som</th>
+      <th class="verde">✓</th>
+      <th class = "vermelho">X</th>
+      <th class = "verde">✓</th>
+    </tr>
+  </table>
+  
+  
+  <strong id="listas"> Top 3 serviços de streaming de música </strong>
+    <ol>  
+    <li><a href = https://www.spotify.com/pt-en/>Spotify</a></li>
+    <li><a href = https://www.apple.com/pt/apple-music//>Apple Music</a></li>
+    <li><a href = https://www.youtube.com/musicpremium/>Youtube Music</a></li>
+    </ol>
+
+  <strong>Melhores géneros músicais</strong>
+    <ul>
+    <li>Hip-Hop</li>
+    <li>Pop</li>
+    <li>Drum & Bass</li>
+    </ul>
+ 
+
+
+    
+  <article id = "artigo">
+    <h1><strong>Música</strong></h1>
+    <p>Música é a combinação de ritmo, harmonia e melodia, de maneira agradável ao ouvido. No sentido amplo é a organização temporal de sons e silêncios (pausas). No sentido restrito, é a arte de coordenar e transmitir efeitos sonoros, harmoniosos e esteticamente válidos, podendo ser transmitida através da voz ou de instrumentos musicais.</p>
+    <p>A música é uma manifestação artística e cultural de um povo, numa determinada época ou região. A música é um veículo usado para expressar os sentimentos.</p>
+    <p> A música evoluiu através dos séculos, resultando numa grande variedade de gêneros musicais, entre eles, a música sacra ou religiosa, a erudita ou clássica, a popular e a tradicional ou folclórica. Cada um dos gêneros musicais possuem uma série de subgêneros e estilos.</p>
+    <p><strong>Fonte:</strong> https://www.significados.com.br/musica/</p>
+<hr>
+
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/PdUGU8p1dnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <audio controls>
+    <source src="audio/571398__josefpres__dark-loops-203-piano-without-melody-long-loop-60-bpm.mp3" type = "audio/wav">
+    o teu browser não suporta a função audio
+  </audio>
+  </article>
+  <article>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000"></canvas>~
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+
+      // Create gradient
+      var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+      grd.addColorStop(0, "blue");
+      grd.addColorStop(1, "white");
+
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.font = "30px SansSerif";
+      ctx.strokeText("Música", 10, 50);
+      
+      </script>
+  </article>
+</section>
+
+<p> <a href="file:///Users/clementemanuelfernandesgil/Desktop/Hello%20Word_english.html">Versão em Inglês</a> </p>
+
+<footer>
+  <!--<p>Afonso Mendes, Afonso Pinheiro, Catarina Gil, Clara Costa, Constança Andrade e Daniela Carreira</p>-->
+</footer>
+
+</body>
+</html>
+
+

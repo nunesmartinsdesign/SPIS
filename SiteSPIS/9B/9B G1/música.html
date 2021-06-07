@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Música</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+}*/
+body{
+  width: 90%;
+  margin: auto;
+  color: black; 
+  font-family: Geografia, 'Calibri', Times, serif;
+  text-align: center;
+  background-image: linear-gradient(red, blue)
+  font-family: Arial, Helvetica, sans-serif;
+} 
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    margin: none;
+    color: white;
+    font-family: Georgia, Times New Roman, Times, sherif;
+    text-align: left; 
+    background-image: url("https://th.bing.com/th/id/OIP.DR39qauKHzvStRnk5RKfMgHaFo?w=214&h=180&c=7&o=5&pid=1.7");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 1850px; /* only for demonstration, should be removed */
+  background: #b366ff;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #f7e6ff;
+  height: 1850px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #862d86 ;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* BANNER GRADIENT */
+
+header {
+    background: linear-gradient(270deg, #ccccff, #000080);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+/* BANNER IMAGE */
+h2{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  
+  height: 400px;
+  margin-bottom: -250px;
+
+}
+.parallax {
+  /* The image used */
+  background-image: url("19847709.jpg");
+
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+  <script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(0, 0);
+  ctx.lineTo(200, 100);
+  ctx.stroke();
+  </script>
+  <!-- Container element -->
+  <div class="parallax"></div>
+  
+  <h4 style="color: black ">
+    A música foi sempre um meio de expressão, não só para os artistas mas também para quem tem a oportunidade de ouvi-la.
+  </h4>
+  <header>
+    <h2>Música</h2>
+  </header>
+  <section>
+    <nav>
+      <ul>
+        <li><a href="https://www.metalblade.com/us">rock</a></li>
+        <li><a href="https://www.allaboutjazz.com/index.php?&width=414">Jazz</a></li>
+        <li><a href="https://essentiallypop.com/epop">POP</a></li>
+      </ul>
+    </nav>
+    <article>
+      <p>Estilos de música: </p>
+      <h1>Metal</h1>
+      <p>Heavy metal (ou simplesmente metal ) é um gênero de música rock que se desenvolveu no final dos anos 1960 e início dos anos 1970, principalmente no Reino Unido e nos Estados Unidos.</p>
+      <br>
+      <h1>Jazz</h1>
+      <p>Jazz é um gênero musical que se originou nas comunidades afro-americanas de Nova Orleans, Lousiana, Estados Unidos , no final do século 19 e início do século 20, com suas raízes no blues e no ragtime.</p>
+      <br>
+      <h1>POP</h1>
+      <p>Pop é um gênero de música popular que se originou em sua forma moderna em meados da década de 1950 nos Estados Unidos e no Reino Unido.</p>
+      <br>
+      <br>
+      <iframe width="1000" height="563" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h1>Exemplo de música POP</h1>
+      <audio controls>
+        <source src="541793__puredesigngirl__pop-music.mp3" type="audio/mpeg">
+      </audio>
+      <br>
+      <br>
+      <table style="width: 100%">
+        <tr>
+          <th>Estilos de música</th>
+          <th>Metal</th>
+          <th>Jazz</th> 
+          <th>POP</th>
+        </tr>
+        <tr>
+          <td>Imagens</td>
+          <td><img src="https://wallpapercave.com/wp/iHZr3kr.jpg" alt="Flowers in Chania" width="300" height="169"></td>
+          <td><img src="https://www.paredesoriginais.pt/664-large_default/trompete-de-jazz.jpg" alt="Flowers in Chania" width="300" height="169"></td>
+          <td><img src="https://wallpapercave.com/wp/wp2417491.jpg" alt="Flowers in Chania" width="300" height="169"></td>
+        </tr>
+        <tr>
+          <td>Ano de formação</td>
+          <td>1960 / 1970</td>
+          <td>1915</td>
+          <td>1950</td>
+        </tr>
+        <tr>
+          <td>Bandas importantes</td>
+          <td>heavy metal-ACDC</td>
+          <td>Original Dixieland Jass Band</td>
+          <td>Bing Crosby</td>
+        </tr>
+
+      </table>
+      <br>
+      <br>
+      <h2>Tipos de Música <h2s>
+      <br>  
+      <table style="width: 100%">
+        <tr>
+          <th>Três tipos de música</th>
+          <th>Três tipos de música</th>
+        </tr>
+        <tr>
+          <td>
+            <ol>
+              <li><a href=https://www.metalblade.com/us/>Metal music</a></li>
+              <li><a href=https://www.allaboutjazz.com/index.php?&width=414>Jazz music</a></li>
+              <li><a href=https://essentiallypop.com/epop/>POP music</a></li>
+            </ol> 
+          </td>
+          <td>
+            <ul>
+              <li>Metal</li>
+              <li>Rock</li>
+              <li>POP</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #0000ff;">
+      </canvas>
+      <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+        ctx.stroke();
+      </script>
+    </article>
+  </section>
+  <footer>
+    <!--<p>Trabalho realizado por: Beatriz Inocencio, Iris Marques, Mafalda Mota, Mafalda Gomes, Manoela Frigeri e Sofia Vieira</p>-->
+  </footer>
+</body>
+</html>

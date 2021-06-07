@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<title>Bandas</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(270deg, #b8a0f3, #84a9ce);
+        background-size: 400% 400%;
+        -webkit-animation: AnimationName 30s ease infinite;
+        -moz-animation: AnimationName 30s ease infinite;
+        animation: AnimationName 30s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @-moz-keyframes AnimationName {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @keyframes AnimationName {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    }
+    
+   
+    body {
+        color: black
+    }
+        /* Style the header */
+    header {
+        background-color: #B5AFBA;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+
+/* Create two columns/boxes that floats next to each other */
+    nav {
+        float: left;
+        width: 30%;
+        /*height: 300px;*/ /* only for demonstration, should be removed */
+        background: #BCC1CC;
+        padding: 20px;
+        
+    }
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: inherit;
+  padding: 0;
+}
+
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #BCC1CC;
+        
+        /*height: 300px;*/ /* only for demonstration, should be removed */
+    }
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+    footer {
+        background-color: #B5AFBA;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    img{width: 100%;
+        max-height: 465px;
+    }
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+ img{
+    width: 100%;
+}
+    nav {
+        width: 100% !important;
+        background-color: #FEC8D8;
+    }
+    article {
+        width: 100% !important;
+        background-color: #D291BC;
+    }
+}
+
+      
+                table, td, th {
+                    border: 1px solid black;
+                    text-align: left;
+                }
+
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                    height: 20%
+                }
+
+                th, td {
+                    padding: 15px;
+                }
+         
+</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Jo�o Martins</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">17100.0000000000</mso:Order>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Jo�o Martins</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:ReferenceId msdt:dt="string"></mso:ReferenceId>
+<mso:ContentTypeId msdt:dt="string">0x010100CF1D9D96CF6DE84CAB2545B16528A13E</mso:ContentTypeId>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+
+    <h1 style="color: #FEFDFE;">Bandas</h1>
+    <p>Neste site vão poder ver a diferença entre estas duas grandes bandas.</p>
+    <p>Vão poder conhecer a história destas bandas, quando foram formadas e muitas mais coisas.</p>
+    <header>
+        <h2>One Direction vs Imagine Dragons</h2>
+    </header>
+
+    <section>
+        <nav>
+            <h1 style="color: white">Músicas</h1>
+            <ul>
+                <li><a href="https://youtu.be/syFZfO_wfMQ">Night Changes(1D)</a></li>
+                <li><a href="https://youtu.be/7wtfhZwyrcc">Believer(Imagine Dragons)</a></li>
+                <li><a href="https://youtu.be/Y1xs_xPb46M">One Thing(1D)</a></li>
+                <li><a href="https://youtu.be/ktvTqknDobU">Radioactive(Imagine Dragons)</a></li>
+                <li><button onclick="myFunction2()">Mudar cor de texto(one direction)</button></li>
+                <!--<li><button onclick="myFunction2()">A2A</button></li>-->
+                <p id="demo"></p>
+
+       
+            </ul>
+        </nav>
+
+
+        <article>
+            <h2 style="color: white">One Direction</h2>
+            <p id="texto" align="justify" style="color: black;">One Direction (ocasionalmente abreviado por 1D) é uma boyband pop formada na cidade de Londres, Reino Unido, em 2010. Atualmente o grupo é formado por Louis Tomlinson, Harry Styles, Liam Payne e Niall Horan.A formação original incluía Zayn Malik, que anunciou sua saída oficialmente em março de 2015. O quinteto foi formado após seus membros participarem do reality show musical The X Factor como competidores solo, até que, durante o programa, a cantora Nicole Scherzinger e Simon Cowell os uniram para concorrer como um grupo. A banda acabou em terceiro lugar do programa, atrás apenas de Rebecca Ferguson e Matt Cardle, respectivamente.</p>
+            <img src="https://media.snl.no/media/22020/standard_compressed_One_Direction_2015.jpg" alt="One Direction imagem">
+            <hr>
+
+
+
+            <h2 style="color: white;">Imagine Dragons</h2>
+            <p align="justify" style=" color:black;">
+                Imagine Dragons é uma banda de pop formada em Las Vegas, nos Estados Unidos. A banda consiste do vocalista Dan Reynolds, do guitarrista Wayne Sermon, do baixista Ben McKee e do baterista Daniel Platzman. A banda  foi primeiro ganhando fama com o lançamento do single "It's Time", seguido pelo seu álbum de estreia, Night Visions (2012), que resultou nos singles "Radioactive" e "Demons". A Billboard colocou-os no topo do ranking "Year In Rock", de 2013 e 2017 e nomeou-os como "Banda Revelação de 2013" e a "Melhor banda de 2017". A Rolling Stone, uma revista que se dedica em música, disse que "Radioactive", que detém o recorde da maioria das semanas na Billboard Hot 100, era o "maior hit de rock do ano" (2013), e a MTV chamou-os de "maior banda de breakout do ano" (também em 2013).
+            </p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Imagine_Dragons%2C_Roundhouse%2C_London_%2835390234536%29.jpg/580px-Imagine_Dragons%2C_Roundhouse%2C_London_%2835390234536%29.jpg" alt="Imagine Dragons imagem">
+            <hr>
+
+
+
+
+            <h2 style="color: white;">One Direction VS Imagine Dragons</h2>
+
+
+
+
+
+            <table border="1" cellspacing="10" width=90% height=20%>
+
+                <tr>
+                    <th></th>
+                    <th>One Direction</th>
+                    <th>Imagine Dragons</th>
+                </tr>
+                <tr>
+                    <th>Número de Membros</th>
+                    <td>4 (antes eram 5, mas devido à saída de Zayn Malik o grupo passou a ser de 4 membros)</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>Ano de Criação</th>
+                    <td>2010</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <th>Uma Música</th>
+                    <td>What Makes You Beautiful </td>
+                    <td>Bad Liar</td>
+                <tr>
+                    <th>Ano de Criação</th>
+                    <td>2010</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <th>Alguns Prémios Recebidos</th>
+                    <td>
+                        -Brit Award: Melhor single britânico,
+                        Teen Choice Award: Melhor Single de Grupo,entre outros
+                    </td>
+                    <td>
+                        -Grammy Award: Melhor Performance de Rock,
+                        Prémio Billboard:Melhor Música Rock
+                    </td>
+                </tr>
+
+            </table>
+            <hr>
+
+            <article>
+                <iframe width="100%" max-height="315" src="https://www.youtube.com/embed/vVSs2r25IyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+
+
+
+
+    </section>
+
+    <footer>
+        <!--<p>Realizado por: Mariana Correia, Ema Rocha, Eva Santos, Letícia Barbudo e Tatiana Chen</p>-->
+    </footer>
+   
+</body>
+
+         <script>
+                   /* function myFunction() {
+                        var x = document.getElementByTagName("LI");
+                        document.getElementById("demo").innerHTML = x[0].innerHTML;
+                    }*/
+
+                    function myFunction2() {
+                        document.getElementById("texto").style.color = "#FFDFD3";
+                    }
+                </script>
+
+
+</html>
+
+

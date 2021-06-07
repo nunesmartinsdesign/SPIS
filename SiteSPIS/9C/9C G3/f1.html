@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>f1</title>
+</head>
+<style>
+body{background-image: linear-gradient(red, green);} 
+table, th, td {
+
+
+border: 1px solid black;
+padding: 2px;
+text-align: center;
+margin: auto;
+
+
+}
+img{
+	width: 100px;
+}
+#tableF1{background: chocolate;
+	text-align: left;
+	width: 348px
+}
+#listas{background: orange}
+body{
+	width: 80%;
+	margin: auto;
+}
+#myPage{background: brown}
+@media screen and (max-width: 600px) {
+ body{
+	max-width: 600px;
+	margin: auto;
+}
+}
+.parallax{
+/* modifica o endereço de imagem de fundo*/
+background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/FIA_F1_Austria_2018_Nr._44_Hamilton.jpg/1024px-FIA_F1_Austria_2018_Nr._44_Hamilton.jpg");
+/* modifica a altura */
+height: 500px;
+/* cria o efeito de scroll parallax */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 15em;
+	color: white;
+	letter-spacing: 0.025em;
+	margin-left: 2%;
+}
+</style>
+
+<body>
+	<div id="myPage">
+		<!--Elemento Contentor --><div class="parallax"><h1>F1</h1></div>
+
+		
+
+	<header>
+		
+		<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+    <input type="button" value="PLAY" onclick="play()">
+    <audio controls id="audio" src="audio/60764__ykg1__f1inspore.mp3"></audio>
+	</header>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/UzJoes1Iubw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+	<section>
+		<article id="tableF1">
+	<table>
+		
+	  <tr>
+	    <th>Marcas</th>  
+	    <th>Preço</th>
+	    <th>Qualidade</th>
+	    <th>Logo</th>
+	  </tr>
+	  <tr>
+	  	 <td>Ferrari</td>
+	  	 <td>45000000$</td>
+	  	 <td>Muito bom</td>
+	  	 <td><img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Ferrari-badge.jpg"></td>
+	  </tr>
+	  <tr>
+	  	<td>McLaren</td>
+	  	<td>50000000$</td>
+	  	<td>Excelente</td>
+	  	<td><img src="https://www.pikpng.com/pngl/m/134-1344117_mclaren-logo-clipart-png-mclaren-automotive-logo-vector.png"></td>
+	  </tr>
+
+	</table>
+</article>
+<article id="listas">
+	<h2>Sites</h2>
+	<ul>
+		<li><a href="https://www.ferrari.com/en-PT">Ferrari site</a></li>
+		<li><a href="https://www.mclaren.com/">McLaren site</a></li>
+	</ul>
+		<h3>Países</h3>
+	<ol>
+		
+		<li>
+			<p>Itália</p>
+		</li>
+		<li>
+			<p>Inglaterra</p>
+		</li>
+	</ol>
+</article>
+</section>
+<canvas id="myCanvas"width="200"height="100"style="border:1px solid #000000;">O teu browser não suporta a marca canvas.</canvas>
+
+	</div>
+</body>
+<script>
+	function f1 (){
+		var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");ctx.beginPath();
+ctx.arc(95, 50, 40,0, 2* Math.PI);
+ctx.stroke();
+	}
+f1 () ;
+</script>
+
+</html>

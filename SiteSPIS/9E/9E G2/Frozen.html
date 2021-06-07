@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frozen</title>
+<style>
+body {
+     background-image:url(frozen.jpg);
+     color:white;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("https://cdn.europosters.eu/image/750/posters/frozen-2-guiding-spirit-i80959.jpg")
+  }
+}
+     
+</style>
+</head>
+<body>
+
+<h1>Frozen</h1>
+
+<button onclick="typeWriter()">Click me</button>
+<hr class="dashed">
+
+<p id="demo"></p>
+
+<script>
+
+var i = 0;
+var txt = 'A história de "A Rainha da Neve" esteve em desenvolvimento na Disney Animation durante boa parte da sua história: 74 anos, mas nenhuma das versões idealizadas durante este longo período saiu do papel, porque os roteiristas não sabiam como fazer o público se relacionar com os personagens pouco críveis e desenvolver a personalidade abstrata da Rainha da Neve. O projeto foi revitalizado em 2011, quando Chris Buck foi escolhido para a direção e ficou decidido que a Rainha da Neve seria irmã da heroína (Anna), criando uma relação real para as duas personagens principais.';
+var speed = 30;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World of Games</title>
+</head>
+	<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<style> 
+	body{width: 80%;margin:none;background-color: white;color:white;font-family: Georgia, 'Times New Roman', Times, serif;text-align: left;} 
+	body{background-image: linear-gradient(black, grey);}
+	.parallax{
+		/* modifica o endereço de imagem de fundo*/
+		background-image: url("https://s2.glbimg.com/_0reXPq2B0kVJXmZwzN9vB97Fq4=/0x0:1920x1080/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2019/s/W/rPsLN6SyAp4q7AcIBYTQ/1541419312747-tr-2-wallpaper.png");
+		/* modifica a altura */
+		height: 500px;
+		/* cria o efeito de scroll parallax */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;}
+</style>
+
+<style>@media only screen and (max-width: 600px) {body{width: 100%;margin:none;color:white;font-family: Georgia, 'Times New Roman', Times, serif;text-align: left;/* modifica o endereço de imagem de fundo*/background-image: url("img_parallax.jpg");/* modifica a altura */height: 500px;/* cria o efeito de scroll parallax */background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}}</style>
+<body>
+	
+	<!--Elemento Contentor --><div class="parallax"></div>
+	<h1>Hello World of Games</h1>
+	<p>Olá somos o Grupo I e gostávamos de conseguir tornar a web um local mais seguro</p>
+	<section>
+		<article>
+			<h3>Minecraft</h3>
+			<p>O Minecraft é um jogo de sobrevivência
+			que consiste na coleta de recursos para evoluir ao9 longo do jogo</p>
+		</article>
+		<article>
+			<h3>CSGO</h3>
+			<p>CS:GO é um jogo multiplayer do estilo FPS
+			</p>
+		</article>
+		<article>
+			<h3>Valheim</h3>
+			<p>Valheim é um jogo de sobrevivência Viking e de mundo aberto.
+			</p>
+		</article>
+	</section>
+	<table style="width:45%">
+ <table>
+  <tr>
+  	<strong>
+  		<th>Browser</th>
+    	<th>Google Chrome</th>
+    	<th>OperaGX</th>
+	</strong>
+  </tr>
+  <tr>
+  	<td>Logo</td>
+  	<td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/128px-Google_Chrome_icon_%28September_2014%29.svg.png" ></td>
+  	<td> <img src="https://www.purepc.pl/image/mini_recenzja/2019/06/11_opera_gx_test_pierwszej_przegladarki_internetowej_dla_graczy_9.jpg"></td>
+  </tr>
+  <tr>
+    <td>Uso livre</td>
+    <td>sim</td>
+    <td>sim</td>
+  </tr>
+  <tr>
+    <td>SuportaHTML/ CSS / JS</td>
+    <td>sim</td>
+    <td>sim</td>
+  </tr>
+  <tr>
+  	<td>Ano Lançamento</td>
+  	<td>2009</td>
+  	<td>2019</td>
+  </tr>
+</table>
+  	<strong>
+  		<h2>Sites favoritos</h2>
+  	</strong>
+  <ol>
+  	<li>Youtube <a href="https:/www.youtube.com/">Youtube</a> </li>
+  	<li>Twitch <a href="https:/www.Twitch.com/">Twitch</a> </li>
+  	<li>Steam <a href="https:/www.steampowered.com/">Steam</a> </li>
+  	<li>Goyabu <a href="https:/www.Goyabu.com/">Goyabu</a> </li>
+  	<li>Gmail <a href="https:/www.Gmail.com/">Gmail</a> </li>
+  </ol>
+  	<strong>
+  		<h2>Conteúdos favoritos</h2>
+  	</strong>
+  <ul>
+  		<li>Vídeos</li>
+  		<li>Mangá</li>
+  		<li>Tutoriais</li>
+  		<li>Programas desportivos</li>
+  		<li>Música</li>
+  </ul>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KnpljMWwy3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  	
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+  	
+	<footer><!--<p>Diogo Machado; João Fernandes; Duarte Santos; Afonso Roque; Vasco Ramalho; Miguel Lino</p>--></footer>
+</body>
+	<script>
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		ctx.beginPath();
+		ctx.arc(95, 50, 40,0, 2* Math.PI);
+		ctx.stroke();
+	</script>
+</html>
